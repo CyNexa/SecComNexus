@@ -1,0 +1,30 @@
+/* Article 1 */
+.art1 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.art1 p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 100;
+    color: #bdbdbd;
+}
+.art1 h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.art1 hr{
+    border: none;
+    height: 2px;
+    background-color: #00e8ff;
+}
+.art1 h3 {
+    font-size: 22px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    color: #bdbdbd;
+}

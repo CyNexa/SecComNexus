@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(4, 1, 24);
+    background-repeat: no-repeat;
+    height: 200vh;
+    color: #fff;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    height: 8vh;
+    transition: top 0.3s;
+}
+header img {
+    width: 220px;
+    height: auto;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+header nav ul li {
+    position: relative;
+}
+header a {
+    color: #bdbdbd;
+    text-decoration: none;
+    padding: 10px 2vw;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+header a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+.sub-nav {
+    display: none;
+    position: absolute;
+    width: auto;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+header nav ul li:hover .sub-nav {
+    display: block;
+}
+.sub-nav li {
+    padding: 8px 1vw;
+}
+.sub-nav a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 1vw;
+    display: block;
+    white-space: nowrap;
+}
+.reg {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+.menu-button {
+    display: none;
+}
