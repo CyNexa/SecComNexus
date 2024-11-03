@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background: rgba(4, 1, 24);
+    background: #00010d;
     background-repeat: no-repeat;
-    height: 200vh;
+    /* height: 500vh; */
     color: #fff;
+}
+body::-webkit-scrollbar {
+    width: 0px;
 }
 header {
     display: flex;
@@ -19,6 +22,7 @@ header {
     padding: 0px 40px;
     height: 8vh;
     transition: top 0.3s;
+    background-color: rgba(4, 1, 24);
 }
 header img {
     width: 220px;
@@ -37,13 +41,13 @@ header nav ul li {
     position: relative;
 }
 header a {
-    color: #bdbdbd;
+    color: #aaaaaa;
     text-decoration: none;
     padding: 10px 2vw;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Quicksand", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
 }
 header a:hover {
     color: #fff;
@@ -67,7 +71,7 @@ header nav ul li:hover .sub-nav {
     padding: 8px 1vw;
 }
 .sub-nav a {
-    color: #bdbdbd;
+    color: #7c7e82 ;
     text-decoration: none;
     font-size: 14px;
     padding: 10px 1vw;
