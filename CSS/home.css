@@ -1,3 +1,15 @@
+#dotsCanvas {
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    position: absolute;
+}
+
+/* Section 1 */
+.sec1 {
+    height: 100vh;
+}
+
 /* Article 1 */
 .art1 {
     display: flex;
@@ -27,4 +39,38 @@
     font-family: "Inter", sans-serif;
     font-weight: 300;
     color: #bdbdbd;
+}
+
+/* Article 2 */
+.art2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 70vw;
+    height: 12vh;
+    border: 2px solid cyan;
+    background-color: var(--color-type-1);
+}
+.art2 hr {
+    align-self: unset;
+    width: 2px;
+    border: none;
+    height: 7vh;
+    background-color: cyan;
+}
+.art2 svg {
+    padding: 10px;
+    box-sizing: unset;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+.art2 > div {
+    display: flex;
+    align-items: center;
+}
+.art2 > div > div {
+    padding-left: 20px;
 }
