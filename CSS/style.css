@@ -49,6 +49,11 @@ body::-webkit-scrollbar {
 html {
     scroll-behavior: smooth;
 }
+.glob_hr {
+    border: none;
+    background-color: var(--second-color);
+    height: 2px;
+}
 
 /* Dark Mode Toggle */
 #dark-mode-toggle {

@@ -21,11 +21,6 @@
     font-weight: 400;
     color: var(--hr-color);;
 }
-.sec3_head hr {
-    border: none;
-    background-color: var(--second-color);
-    height: 2px;
-}
 
 /* Article 1 */
 .art1 {
@@ -116,11 +111,6 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: var(--hr-color);
-}
-.art4_top hr {
-    border: none;
-    background-color: var(--second-color);
-    height: 2px;
 }
 .art4_bottom {
     margin-top: 30px;
