@@ -1,34 +1,21 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS Variables */
-/* :root {
-    --first-color: #000;
-    --second-color: #6f00ff;
-    --third-color: #9f00c7;
-    --fourth-color: #333333;
-    --color-type-1: #c3d3ff;
-    --color-type-2: #ebebeb;
-    --hr-color: #a200ff;
-    --background-color: #fafafa;
-    --invert-1: invert(0);
-    --bright-50: brightness(50%);
-} */
-
 :root {
     /* Text */
     --first-color: #fff;
     --second-color: cyan;
-    --third-color: #76b9f0;
-    --fourth-color: #a8a8a8;
+    --third-color: #5d97d1;
+    --fourth-color: #008484;
+    --fifth-color: #cb1977;
+    --sixth-color: #000;
     /* Color-Type */
     --color-type-1: #111111;
     --color-type-2: #141414;
     --hr-color: #fff;
     /* Background */
-    --background-color: linear-gradient(180deg, rgb(0, 45, 45), #000000);
-    --invert-1: invert(50);
-    --bright-50: brightness(110%);
+    --background-color: #0c1439;
 }
 
 /* Reset */
@@ -40,7 +27,8 @@
 body {
     background: var(--background-color);
     color: var(--first-color);
-    height: 200vh;
+    height: 500vh;
+    font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
     width: 0px;
@@ -74,19 +62,15 @@ html {
 header {
     display: flex;
     position: fixed;
-    width: 90vw;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     padding: 0px 40px;
-    margin: 30px 5vw;
     height: 8vh;
-    border-radius: 50px;
-    border: 2px solid cyan;
     transition: top 0.3s;
-    background-color: var(--color-type-1);
+    background-color: #fff;
     z-index: 1000;
     animation: fadeInFromTop 1s ease-out forwards;
-    box-shadow: 0px 0px 40px -12px var(--second-color);
 }
 header img {
     width: 220px;
@@ -105,17 +89,16 @@ header nav ul li {
     position: relative;
 }
 header a {
-    color: var(--fourth-color);
+    color: #2b2b2b;
     text-decoration: none;
     padding: 10px 2vw;
-    border-radius: 20px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
 header a:hover {
-    color: var(--fourth-color);
-    background-color: rgba(0, 0, 0, 0.4);
+    color: #000;
+    background-color: #bebebe;
     transition: 0.3s;
 }
 
@@ -127,8 +110,8 @@ header a:hover {
     top: 100%;
     left: 0;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.4);;
-    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #acacac;
 }
 header nav ul li:hover .sub-nav {
     display: block;
@@ -137,7 +120,7 @@ header nav ul li:hover .sub-nav {
     padding: 8px 1vw;
 }
 .sub-nav a {
-    color: var(--fourth-color);
+    color: #000;
     text-decoration: none;
     font-size: 14px;
     padding: 10px 1vw;
@@ -146,9 +129,8 @@ header nav ul li:hover .sub-nav {
 }
 .reg {
     padding: 10px 30px;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: #008484;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -165,6 +147,7 @@ footer {
     justify-content: space-between;
     font-family: "Inter", sans-serif;
     animation: fadeInFromBottom 1s ease-out forwards;
+    display: none;
 }
 footer article {
     width: 30vw;

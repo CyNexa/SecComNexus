@@ -32,7 +32,7 @@ let dotCount;
             dotCount = 30;  // Low count for phones
         } // dots
 const maxDistance = 150; // distance
-const speed = 1; // movement
+const speed = 0.3; // movement
 
 // Create dot class
 class Dot {

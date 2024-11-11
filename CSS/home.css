@@ -7,26 +7,35 @@
 
 /* Section 1 */
 .sec1 {
-    height: 100vh;
+    height: 90vh;
+}
+.sec2 {   
+    padding: 5vh 5vw;
+    background-color: var(--color-type-2);
+    /* height: 80vh; */
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan;
+    padding-top: 10vh;
+    box-shadow: 0px 0px 40px -12px var(--second-color);
 }
 
 /* Article 1 */
 .art1 {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 84vh;
     justify-content: center;
     align-items: center;
 }
 .art1 p {
-    font-size: 20px;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     font-family: "Inter", sans-serif;
-    font-weight: 100;
-    color: #bdbdbd;
+    font-weight: 200;
+    color: #b4b4b4;
 }
 .art1 h1 {
-    font-size: 60px;
+    font-size: 5rem;
     font-family: sans-serif;
 }
 .art1 hr{
@@ -35,14 +44,15 @@
     background-color: #00e8ff;
 }
 .art1 h3 {
-    font-size: 22px;
+    font-size: 2rem;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: #bdbdbd;
+    color: var(--third-color); 
 }
 
 /* Article 2 */
 .art2 {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,9 +61,25 @@
     margin: 0 auto;
     width: 70vw;
     height: 12vh;
-    border: 2px solid cyan;
     background-color: var(--color-type-1);
+    font-family: "Inter", sans-serif;
+    z-index: 100;
+    box-shadow: 0px -40px 40px -40px var(--second-color);
 }
+.art2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-top: 2px solid cyan;
+    border-left: 2px solid cyan;
+    border-right: 2px solid cyan;
+    border-radius: 20px 20px 0px 0px;
+    pointer-events: none;
+}
+
 .art2 hr {
     align-self: unset;
     width: 2px;
@@ -73,4 +99,34 @@
 }
 .art2 > div > div {
     padding-left: 20px;
+}
+.art2 > div > div h3 {
+    font-weight: 400;
+}
+.art2 > div > div p {
+    font-weight: 200;
+}
+
+/* Article 3 */
+.art3 div {
+    padding-bottom: 20px;
+}
+.art3 div p {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.art3 div h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    color: var(--second-color);
+}
+.art3 div h5 {
+    font-weight: 100;
+}
+.art3 > p {
+    font-weight: 200;
+    color: var(--fifth-color);
 }
