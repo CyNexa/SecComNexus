@@ -27,7 +27,7 @@
 body {
     background: var(--background-color);
     color: var(--first-color);
-    height: 500vh;
+    /* height: 500vh; */
     font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
@@ -40,22 +40,6 @@ html {
     border: none;
     background-color: var(--second-color);
     height: 2px;
-}
-
-/* Dark Mode Toggle */
-#dark-mode-toggle {
-    padding: 8px 16px;
-    font-size: 1em;
-    color: var(--text-color);
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.dark-mode #dark-mode-toggle {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
 }
 
 /* Header */
@@ -143,11 +127,11 @@ header nav ul li:hover .sub-nav {
 footer {
     display: flex;
     padding: 30px 40px;
-    background-color: var(--color-type-1);
+    /* background-color: var(--color-type-1); */
     justify-content: space-between;
     font-family: "Inter", sans-serif;
     animation: fadeInFromBottom 1s ease-out forwards;
-    display: none;
+    /* display: none; */
 }
 footer article {
     width: 30vw;
@@ -170,7 +154,7 @@ footer hr {
 .foot1_links div img {
     width: 20px;
     height: auto;
-    filter: var(--invert-1);
+    filter: invert(100%);
 }
 .foot1_links div a {
     font-weight: 200;
@@ -214,14 +198,14 @@ footer hr {
     border: none;
     outline: 1px solid #fff;
     border-radius: 5px;
-    background-color: var(--color-type-2);
+    background-color: #ffffff28;
     color: var(--first-color);
     font-family: sans-serif;
     resize: none;
 }
 #query-form input[type="email"]::placeholder,
 #query-form textarea::placeholder {
-    color: var(--fourth-color);
+    color: #b1b1b1;
     font-size: 0.8rem;
     font-weight: 200;
 }
@@ -288,4 +272,20 @@ footer hr {
     100% {
         opacity: 1;
     }
+}
+
+
+
+/* Working */
+.working {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.working h1 {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
