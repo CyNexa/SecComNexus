@@ -27,7 +27,7 @@
 body {
     background: var(--background-color);
     color: var(--first-color);
-    /* height: 500vh; */
+    height: 500vh;
     font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
@@ -111,11 +111,25 @@ header nav ul li:hover .sub-nav {
     display: block;
     white-space: nowrap;
 }
-.reg {
+.nav_ext {
     padding: 10px 30px;
-    background-color: #008484;
     color: #fff;
     font-weight: 600;
+}
+.prt {
+    background-color: #cb1977;
+}
+.prt:hover {
+    background-color: #921156;
+    color: #fff;
+}
+.reg {
+    margin-left: 10px;
+    background-color: #008484;
+}
+.reg:hover {
+    background-color: #006363;
+    color: #fff;
 }
 
 /* Menu Button */
@@ -289,3 +303,4 @@ footer hr {
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
+
