@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = "-15vh";
+    navbar.style.top = "-10vh";
   } else {
     navbar.style.top = "0";
   }
@@ -30,7 +30,7 @@ let dotCount;
             dotCount = 30;
         }
 const maxDistance = 150;
-const speed = 0.3;
+const speed = 0.5;
 
 class Dot {
   constructor(x, y) {
@@ -119,3 +119,31 @@ function toggleAnswer(questionElement) {
       answer.style.display = "none";
   }
 }
+
+// Sec 4 Auto Scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector('.carousel-track');
+  const items = document.querySelectorAll('.carousel-item');
+
+  // Duplicate items to create a seamless loop
+  items.forEach(item => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+  });
+
+  let scrollAmount = 0;
+
+  function scrollCarousel() {
+      scrollAmount += 1; // Adjust this value to control the speed
+
+      if (scrollAmount >= items[0].offsetWidth) {
+          track.appendChild(track.firstElementChild);
+          scrollAmount = 0;
+      }
+
+      track.style.transform = `translateX(-${scrollAmount}px)`;
+      requestAnimationFrame(scrollCarousel);
+  }
+
+  scrollCarousel();
+});

@@ -18,7 +18,6 @@
           <li>
             <a href="about.html">About</a>
             <ul class="sub-nav">
-              <li><a href="about.html#art1">Brainware University</a></li>
               <li><a href="about.html#art4">Dept. Of Cyber Science & Technology</a></li>
             </ul>
           </li>
@@ -30,7 +29,7 @@
               <li><a href="games.html#">Call Of Duty Mobile</a></li>
             </ul>
           </li>
-          <li><a href="conferance.html">Conferance</a></li>
+          <li><a href="conferance.html">Conference</a></li>
           <li>
             <a href="sponsors.html">Sponsors</a>
             <ul class="sub-nav">
@@ -40,7 +39,10 @@
           </li>
         </ul>
       </nav>
-      <a class="reg" href="#">Registration</a>
+      <div>
+        <a class="nav_ext prt" href="sponsors.html">Partner With Us</a>
+        <a class="nav_ext reg" href="#">Registration</a>
+      </div>
       <div class="menu-button" id="menuButton">&#9776;</div>
     </header>
 
@@ -55,22 +57,13 @@
         <div class="foot1_links">
           <h3>Contact Us</h3>
           <div>
-            <img src="Assets/SM-Icons/call-b.png" alt="" /><a
-              href="tel:+91 7044447723"
-              >+91 70444 47723</a
-            >
+            <img src="Assets/SM-Icons/call-b.png" alt="" /><a href="tel:+91 7044447723" >+91 70444 47723</a>
           </div>
           <div>
-            <img src="Assets/SM-Icons/mail-b.png" alt="" /><a
-              href="mailto:info@brainwareuniversity.ac.in"
-              >info@brainwareuniversity.ac.in</a
-            >
+            <img src="Assets/SM-Icons/mail-b.png" alt="" /><a href="mailto:info@brainwareuniversity.ac.in" >info@brainwareuniversity.ac.in</a>
           </div>
           <div>
-            <img src="Assets/SM-Icons/loc-b.png" alt="" /><a href=""
-              >398, Ramkrishnapur Road, Barasat <br />
-              Near Jagadighata Market, Kolkata, West Bengal 700125</a
-            >
+            <img src="Assets/SM-Icons/loc-b.png" alt="" /><a href="">398, Ramkrishnapur Road, Barasat <br />Near Jagadighata Market, Kolkata, West Bengal 700125</a>
           </div>
         </div>
         <div class="foot1_icons">
@@ -83,37 +76,28 @@
       </article>
       <hr />
       <article>
-        <iframe
-          style="filter: var(--invert-1); border: none"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20817.12338536643!2d88.50372084337864!3d22.728900085124508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2sBrainware%20University!5e0!3m2!1sen!2sin!4v1730965529747!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <iframe style="filter: var(--invert-1); border: none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20817.12338536643!2d88.50372084337864!3d22.728900085124508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2sBrainware%20University!5e0!3m2!1sen!2sin!4v1730965529747!5m2!1sen!2sin" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
       <hr />
       <article class="foot2">
         <h3>Query Form</h3>
         <form id="query-form" action="#" method="POST">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required/>
+        
+          <div class="input-row">
+            <div class="input-half">
+              <label for="phone">Phone</label>
+              <input type="number" id="phone" name="phone" placeholder="Your Phone Number" required/>
+            </div>
+            <div class="input-half">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required/>
+            </div>
+          </div>
+        
           <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-          ></textarea>
+          <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
           <button type="submit">Submit</button>
         </form>
       </article>

@@ -5,11 +5,8 @@
 :root {
     /* Text */
     --first-color: #fff;
-    --second-color: cyan;
-    --third-color: #5d97d1;
-    --fourth-color: #008484;
-    --fifth-color: #cb1977;
-    --sixth-color: #000;
+    --second-color: #cb1977;
+    --third-color: #008484;
     /* Color-Type */
     --color-type-1: #111111;
     --color-type-2: #141414;
@@ -27,7 +24,7 @@
 body {
     background: var(--background-color);
     color: var(--first-color);
-    height: 500vh;
+    /* height: 500vh; */
     font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
@@ -38,7 +35,7 @@ html {
 }
 .glob_hr {
     border: none;
-    background-color: var(--second-color);
+    background-color: var(--third-color);
     height: 2px;
 }
 
@@ -146,6 +143,7 @@ footer {
     font-family: "Inter", sans-serif;
     animation: fadeInFromBottom 1s ease-out forwards;
     /* display: none; */
+    background-color: #0c1439;
 }
 footer article {
     width: 30vw;
@@ -199,30 +197,43 @@ footer hr {
     display: flex;
     flex-direction: column;
 }
+
 #query-form label {
     font-size: 1rem;
     font-weight: 300;
     margin: 10px 0 5px;
     color: var(--first-color);
 }
+
+#query-form input[type="text"],
+#query-form input[type="number"],
 #query-form input[type="email"],
 #query-form textarea {
     padding: 10px;
     font-size: 1em;
     border: none;
-    outline: 1px solid #fff;
     border-radius: 5px;
     background-color: #ffffff28;
     color: var(--first-color);
     font-family: sans-serif;
     resize: none;
+    width: 100%;
+    box-sizing: border-box;
 }
-#query-form input[type="email"]::placeholder,
+#query-form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Styling for placeholder text */
+#query-form input::placeholder,
 #query-form textarea::placeholder {
     color: #b1b1b1;
     font-size: 0.8rem;
     font-weight: 200;
 }
+
+/* Style for button */
 #query-form button {
     margin-top: 15px;
     padding: 10px;
@@ -236,6 +247,20 @@ footer hr {
 }
 #query-form button:hover {
     background-color: #47c94e;
+}
+
+/* Flex styling for row of inputs */
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input-half {
+    flex: 1;
+}
+.input-half input {
+    margin-top: 5px;
 }
 
 /* Animations */
