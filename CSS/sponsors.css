@@ -1,0 +1,148 @@
+.sec1 {
+    padding-top: 10vh;
+    background: linear-gradient(180deg, rgba(101, 77, 160, 1) 0%, rgba(182, 35, 127, 1) 50%, rgba(249, 156, 8, 1) 100%);
+}
+
+/* Article 1 */
+.art1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 8vh;
+}
+.art1_top {
+    align-self: center;
+}
+.art1_top h1 {
+    font-size: 2.5rem;
+}
+.art1_top hr {
+    border: none;
+    height: 2px;
+    background-color: cyan;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: #333;
+}
+.card {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-header {
+    background-color: #008484;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+.features {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+}
+.features li {
+    padding: 10px;
+    border-bottom: 1px solid #bebebe;
+    text-align: center;
+}
+.features li:last-child {
+    border-bottom: none;
+}
+.cta-button {
+    background-color: #007ba7;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #005f80;
+}
+
+/* Article 2 */
+.banner {
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10px;
+}
+.banner_top {
+    align-self: center;
+    margin-bottom: 40px;
+}
+.banner_top h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.banner_top hr {
+    border: none;
+    height: 2px;
+    background-color: cyan;
+}
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    justify-content: center;
+    padding: 0px 5vw;
+}
+.benefit {
+    background-color: #f0f8ff;
+    color: #007ba7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Responsive design for benefits grid */
+@media (max-width: 992px) {
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .benefits-container {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+    }
+}
