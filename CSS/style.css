@@ -24,7 +24,7 @@
 body {
     background: var(--background-color);
     color: var(--first-color);
-    /* height: 500vh; */
+    height: 500vh;
     font-family: "Inter", sans-serif;
 }
 body::-webkit-scrollbar {
