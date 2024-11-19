@@ -1,0 +1,33 @@
+main {
+    background: linear-gradient(180deg, rgba(101, 77, 160, 1) 0%, rgba(182, 35, 127, 1) 50%, rgba(249, 156, 8, 1) 100%);
+}
+
+.art1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.art1 img {
+    width: 400px;
+    height: 250px;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: 15px;
+    transition: 300ms;
+}
+
+.art1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 800px) {
+    .art1 img {
+        width: 300px;
+        height: 200px;
+    }
+}
