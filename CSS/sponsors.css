@@ -133,16 +133,19 @@
 }
 
 /* Responsive design for benefits grid */
-@media (max-width: 992px) {
-    .benefits-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on medium screens */
+@media (max-width: 800px) {
+    .art1_top h1 {
+        font-size: 1.5rem;
     }
-}
+    .container {
+        flex-direction: column;
+    }
 
-@media (max-width: 576px) {
+    /* Article 2 */
     .benefits-container {
-        grid-template-columns: 1fr;
-        /* 1 column on small screens */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .benefit {
+        font-size: 0.8rem;
     }
 }

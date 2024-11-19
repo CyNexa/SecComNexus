@@ -26,21 +26,14 @@ header a:hover {
 }
 
 /* Section 1 */
-.sec1 {
+.sec1, .sec2 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
-}
-.sec1 > img {
-    position: absolute;
-    z-index: -999;
-}
-.valo_ph {
-    bottom: -40vh;
-    right: 0;
-    width: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Article 1 */
@@ -79,59 +72,129 @@ header a:hover {
 
 /* Article 2 */
 .art2 {
-    margin-bottom: 10vh;
+    display: flex;
+    margin-top: 5vh;
     padding: 2vh 5vw;
     animation: fadeInFromLeft 1s ease-out forwards;
 }
-.art2 h1 {
-    font-size: 3rem;
-    font-family: "Valorant";
+.art2 > div > div h1 {
     font-weight: 100;
-    color: #ff4654;
+    /* line-height: 3rem; */
 }
-.art2 p {
-    font-size: 1.8rem;
+.art2 > div > div p {
     font-weight: 300;
+    font-size: 1.8rem;
+}
+.valo h1 {
+    font-size: 3rem;
+    color: #ff4654;
+    font-family: "Valorant";
+}
+.valo p {
     color: #ff8189;
 }
-.art2_btn_div {
+.bgmi h1 {
+    color: #fc9b0e;
+    font-family: "BGMI";
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+.bgmi p {
+    color: #fcbd0e;
+}
+.img2 {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    top: -100px;
+}
+.img2_valo {
+    filter: drop-shadow(0px 0px 90px #7ad3e3);
+}
+.img2_bgmi {
+    filter: drop-shadow(0px 0px 90px #fc9b0e);
+}
+.reg_btn_div {
     display: inline-block;
     margin-top: 40px;
     padding: 5px;
     border: 1px solid #fff;
     border-radius: 8px;
 }
-.art2 a {
+.reg_btn_div a {
     display: block;
     padding: 10px 20px;
-    background-color: #ff4654;
     color: #fff;
     font-size: 1.3rem;
     font-family: "Inter", sans-serif;
     border-radius: 8px;
     text-decoration: none;
 }
-
-/* Article 3 */
-.art3 {
-    display: flex;
-    flex-direction: column;
-    animation: fadeInFromLeft 1s ease-out forwards;
-}
-.art3 > p {
+.reg_valo a {
     background-color: #ff4654;
-    padding: 5px 0px;
-    text-align: center;
-    font-weight: 300;
 }
-.art3 > div {
-    display: flex;
-    justify-content: space-between;
-    padding: 0vh 5vw;
+.reg_bgmi a {
+    background-color: #fc9b0e;
 }
+.reg_fee {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Article 3  */
 
 /* Font Add */
 @font-face {
     font-family: "Valorant";
     src: url(Font/Valorant\ Font.ttf);
+}
+
+@font-face {
+    font-family: "BGMI";
+    src: url(Font/PUBG\ SANS.ttf);
+}
+
+@media (max-width: 800px) {
+    header {
+        display: none;
+    }
+    .sec1, .sec2 {
+        height: auto;
+        padding: 30px 0px;
+    }
+    .art1 {
+        margin-top: 20px;
+    }
+    .art1_part1 {
+        padding: 10px;
+    }
+    .art1_part1 h2 {
+        font-size: 1rem;
+    }
+    .art1_part1 h3 {
+        font-size: 0.5rem;
+    }
+
+    .valo h1 {
+        font-size: 2rem;
+    }
+    .bgmi h1 {
+        font-size: 2rem;
+    }
+    .art2 > div > div p {
+        font-size: 0.8rem;
+    }
+    .art2 {
+        flex-direction: column;
+    }
+    .img2 {
+        display: none;
+    }
+    .reg_fee {
+        font-size: 0.8rem;
+    }
+    .reg_btn_div a {
+        font-size: 1rem;
+    }
 }
