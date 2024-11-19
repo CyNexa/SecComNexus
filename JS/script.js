@@ -22,13 +22,13 @@ canvas.height = window.innerHeight;
 
 const dots = [];
 let dotCount;
-        if (window.innerWidth >= 1024) {
-            dotCount = 120;
-        } else if (window.innerWidth >= 768) {
-            dotCount = 80;
-        } else {
-            dotCount = 30;
-        }
+if (window.innerWidth >= 1024) {
+  dotCount = 120;
+} else if (window.innerWidth >= 768) {
+  dotCount = 80;
+} else {
+  dotCount = 30;
+}
 const maxDistance = 100;
 const speed = 0.5;
 
@@ -112,50 +112,27 @@ window.addEventListener("resize", () => {
 
 // FAQ
 function toggleAnswer(questionElement) {
-  const answer = questionElement.nextElementSibling; 
+  const answer = questionElement.nextElementSibling;
   if (answer.style.display === "none" || answer.style.display === "") {
-      answer.style.display = "block";
+    answer.style.display = "block";
   } else {
-      answer.style.display = "none";
+    answer.style.display = "none";
   }
 }
 
 // Sec 4 Auto Scroll
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector('.carousel-track');
-  const items = document.querySelectorAll('.carousel-item');
-
-  // Duplicate items to create a seamless loop
-  items.forEach(item => {
-      const clone = item.cloneNode(true);
-      track.appendChild(clone);
-  });
-
-  let scrollAmount = 0;
-
-  function scrollCarousel() {
-      scrollAmount += 1; // Adjust this value to control the speed
-
-      if (scrollAmount >= items[0].offsetWidth) {
-          track.appendChild(track.firstElementChild);
-          scrollAmount = 0;
-      }
-
-      track.style.transform = `translateX(-${scrollAmount}px)`;
-      requestAnimationFrame(scrollCarousel);
-  }
-
-  scrollCarousel();
-});
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
 
 // Toggle menu function
 function toggleMenu() {
   const menuButton = document.querySelector('.float-menu');
   const navMenu = document.querySelector('.float-nav');
-  
+
   menuButton.classList.toggle('active');
   navMenu.classList.toggle('active');
-  
-  // Toggle the button's icon between ☰ and ✖
+
   menuButton.textContent = menuButton.classList.contains('active') ? '✖' : '☰';
 }
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();

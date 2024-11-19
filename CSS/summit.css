@@ -48,6 +48,12 @@
     align-items: center;
     margin: 30px 15px;
 }
+.art2_topic {
+    animation: fadeInFromLeft 1s ease-out forwards;
+}
+.art2_topic_rev {
+    animation: fadeInFromRight 1s ease-out forwards;
+}
 .art2_topic_text {
     width: 65vw;
 }

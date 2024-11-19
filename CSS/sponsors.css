@@ -11,6 +11,7 @@
     padding: 20px;
     font-family: "Inter", sans-serif;
     margin-bottom: 8vh;
+    animation: fadeInFromTop 1s ease-out forwards;
 }
 .art1_top {
     align-self: center;

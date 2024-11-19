@@ -9,6 +9,7 @@ main {
     flex-wrap: wrap;
     padding-top: 10vh;
     padding-bottom: 5vh;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 .art1 img {

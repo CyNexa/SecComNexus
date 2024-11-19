@@ -307,6 +307,13 @@ footer hr {
     margin-top: 5px;
 }
 
+.cpyrht {
+    background: #a87128;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
 /* Animations */
 @keyframes fadeInFromTop {
     0% {
@@ -481,5 +488,8 @@ footer hr {
     }
     .float-menu {
         display: flex;
+    }
+    .cpyrht {
+        font-size: 0.7rem;
     }
 }

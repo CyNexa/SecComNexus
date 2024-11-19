@@ -77,15 +77,12 @@ header a:hover {
     padding: 2vh 5vw;
     animation: fadeInFromLeft 1s ease-out forwards;
 }
-.art2 > div > div h1 {
-    font-weight: 100;
-    /* line-height: 3rem; */
-}
 .art2 > div > div p {
     font-weight: 300;
     font-size: 1.8rem;
 }
 .valo h1 {
+    font-weight: 200;
     font-size: 3rem;
     color: #ff4654;
     font-family: "Valorant";
@@ -98,9 +95,18 @@ header a:hover {
     font-family: "BGMI";
     font-size: 3.5rem;
     letter-spacing: 1px;
+    font-weight: 200;
 }
 .bgmi p {
     color: #fcbd0e;
+}
+.ctf h1 {
+    color: cyan;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.ctf p {
+    color: rgb(21, 184, 184);
 }
 .img2 {
     position: absolute;
@@ -135,6 +141,9 @@ header a:hover {
 }
 .reg_bgmi a {
     background-color: #fc9b0e;
+}
+.reg_ctf a {
+    background-color: #14a8c2;
 }
 .reg_fee {
     margin-top: 10px;
@@ -177,24 +186,30 @@ header a:hover {
     }
 
     .valo h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .bgmi h1 {
         font-size: 2rem;
     }
+    .ctf h1 {
+        font-size: 1.5rem;
+    }
     .art2 > div > div p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .art2 {
         flex-direction: column;
+    }
+    .reg_btn_div a {
+        padding: 8px 16px;
     }
     .img2 {
         display: none;
     }
     .reg_fee {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .reg_btn_div a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
