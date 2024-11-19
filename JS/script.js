@@ -1,13 +1,13 @@
 let lastScrollTop = 0;
-const navbar = document.getElementById("navbar");
+const navibar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = "-10vh";
+    navibar.style.top = "-10vh";
   } else {
-    navbar.style.top = "0";
+    navibar.style.top = "0";
   }
 
   lastScrollTop = scrollTop;
@@ -29,7 +29,7 @@ let dotCount;
         } else {
             dotCount = 30;
         }
-const maxDistance = 150;
+const maxDistance = 100;
 const speed = 0.5;
 
 class Dot {
@@ -147,3 +147,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   scrollCarousel();
 });
+
+// Toggle menu function
+function toggleMenu() {
+  const menuButton = document.querySelector('.float-menu');
+  const navMenu = document.querySelector('.float-nav');
+  
+  menuButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  
+  // Toggle the button's icon between ☰ and ✖
+  menuButton.textContent = menuButton.classList.contains('active') ? '✖' : '☰';
+}
