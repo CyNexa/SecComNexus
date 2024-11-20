@@ -144,6 +144,9 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+.art4 p, .art5 p, .art5 li {
+    text-align: justify;
+}
 .art5_div1 {
     animation: fadeInFromLeft 1s ease-out forwards;
 }
@@ -188,6 +191,9 @@ body {
 .art6 img {
     width: 15vw;
     border: 10px solid #e4e4e4;
+}
+.art6 p {
+    text-align: justify;
 }
 
 @media (max-width: 800px) {

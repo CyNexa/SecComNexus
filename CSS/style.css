@@ -126,11 +126,9 @@ header nav ul li:hover .sub-nav {
     color: #fff;
     border-radius: 5px;
     font-weight: 600;
-}
-.reg {
     background-color: #008484;
 }
-.reg:hover {
+.nav_ext:hover {
     background-color: #006363;
     color: #fff;
 }
