@@ -29,7 +29,7 @@ if (window.innerWidth >= 1024) {
 } else {
   dotCount = 30;
 }
-const maxDistance = 100;
+const maxDistance = 130;
 const speed = 0.5;
 
 class Dot {
@@ -136,3 +136,17 @@ function toggleMenu() {
 }
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Timetable JS
+function showTimetable(day) {
+  const timetables = document.querySelectorAll('.timetable');
+  timetables.forEach(timetable => timetable.style.display = 'none');
+
+  const selectedTimetable = document.getElementById(day);
+  selectedTimetable.style.display = 'block';
+
+  selectedTimetable.classList.add('open');
+}
+document.addEventListener("DOMContentLoaded", function() {
+  showTimetable('day1');
+});
