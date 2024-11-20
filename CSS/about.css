@@ -87,8 +87,8 @@ body {
 }
 .art2 div p {
     font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1rem;
     color: var(--second-color);
 }
 .art2 hr {
