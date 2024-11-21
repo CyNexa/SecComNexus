@@ -129,7 +129,7 @@
 .art4 {
     display: flex;
     flex-direction: column;
-    padding: 5vh 20vw;
+    padding: 5vh 18vw;
     background: rgb(101, 77, 160);
     background: linear-gradient(180deg, rgba(101, 77, 160, 1) 0%, rgba(182, 35, 127, 1) 50%, rgba(249, 156, 8, 1) 100%);
 }
@@ -156,10 +156,11 @@
     justify-content: center;
     margin: 10px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .art4_ppls>div img {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 240px;
     border-radius: 20px 20px 0px 0px;
     background-color: #464646;
 }
@@ -342,11 +343,18 @@
         font-size: 2rem;
     }
     .art4_ppls>div img {
-        height: 150px;
+        height: 187.5px;
         width: 150px;
     }
     .art4_ppls {
         margin-bottom: 0;
+    }
+    .art4_ppls>div>div h4 {
+        font-size: 0.8rem;
+    }
+    .art4_ppls>div>div p {
+        font-size: 0.5rem;
+        color: #464646;
     }
 
     /* Article 5 */
