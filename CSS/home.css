@@ -189,7 +189,7 @@
 }
 .logos {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 50px 0;
     background: #5d97d1;
     white-space: nowrap;
     position: relative;
@@ -219,7 +219,7 @@
     animation: 35s slide infinite linear;
 }
 .logos-slide img {
-    height: 50px;
+    height: 80px;
     margin: 0 40px;
 }
 
@@ -358,11 +358,24 @@
     }
 
     /* Article 5 */
-    .art5 {
-        padding: 3vh 0vw;
+    .logos {
+        overflow: hidden;
+        padding: 30px 0;
+        background: #5d97d1;
+        white-space: nowrap;
+        position: relative;
     }
-    .carousel-item {
-        width: 100px;
+    .logos:before {
+        left: 0;
+        background: transparent;
+    }
+    .logos:after {
+        right: 0;
+        background: transparent;
+    }
+    .logos-slide img {
+        height: 50px;
+        margin: 0 30px;
     }
 
     /* Article 7 */
