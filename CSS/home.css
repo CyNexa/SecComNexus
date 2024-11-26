@@ -145,7 +145,7 @@
 .art4_ppls {
     margin: 5vh 0vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
 }
@@ -157,6 +157,7 @@
     margin: 10px;
     margin-bottom: 50px;
     overflow: hidden;
+    border-radius: 10px;
 }
 .art4_ppls>div img {
     height: 300px;
@@ -165,7 +166,7 @@
     background-color: #464646;
 }
 .art4_ppls>div>div {
-    padding: 10px;
+    padding: 10px 5px;
 }
 .art4_ppls>div>div h4 {
     color: #000;
@@ -343,8 +344,9 @@
         font-size: 2rem;
     }
     .art4_ppls>div img {
-        height: 187.5px;
-        width: 150px;
+        height: 177.5px;
+        width: 140px;
+        border-radius: 10px 10px 0px 0px;
     }
     .art4_ppls {
         margin-bottom: 0;
@@ -391,5 +393,12 @@
     }
     .faq-answer {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .art4_ppls>div img {
+        height: 197.5px;
+        width: 160px;
     }
 }
