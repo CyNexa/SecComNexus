@@ -320,6 +320,16 @@
     color: #1b1b1b;
 }
 
+/* Chief */
+.chief {
+    position: absolute;
+    margin: 10px;
+    padding: 3px 8px;
+    background-color: rgb(211, 0, 28);
+    border-radius: 20px;
+    font-size: 14px;
+}
+
 @media (max-width: 800px) {
     .sec1 {
         height: auto;
