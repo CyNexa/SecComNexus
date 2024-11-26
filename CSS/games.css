@@ -9,7 +9,8 @@ header {
 }
 header a {
     color: #fff;
-    font-family: "Valorant";
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 header a:hover {
     background-color: transparent;
