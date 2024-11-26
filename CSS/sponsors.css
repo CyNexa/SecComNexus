@@ -229,4 +229,7 @@
     .benefit {
         font-size: 0.8rem;
     }
+    .partnership {
+        display: none;
+    }
 }

@@ -341,13 +341,18 @@
         height: 75vh;
     }
     .art1 p {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .art1 h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .art1 h3 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+    }
+
+    /* Partners */
+    .hero_partners {
+        display: none;
     }
 
     /* Article 2 */
