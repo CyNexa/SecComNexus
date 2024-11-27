@@ -47,118 +47,193 @@
           <strong>Insightful Sessions :</strong>
           Deep dives into specific cybersecurity topics, led by industry veterans and thought.
         </h2>
-        <div class="art2_topic art2_topic_rev">
-          <div class="art2_topic_text">
-            <h3>Zero Trust Architecture: Implementing a Security-First Approach</h3>
-            <p>
-              As cyber threats grow more sophisticated, traditional security models are often no longer enough. In this
-              session, Professor [Name] will explain the concept of Zero Trust Architecture, a model that assumes every
-              access request could be a potential risk. Rather than automatically trusting anyone inside the network,
-              Zero Trust verifies every user and device to prevent breaches and minimize access to critical data.
-              Attendees will learn about the key principles of Zero Trust, how to implement this security-first model,
-              and the benefits of adopting it to strengthen organizational defenses.
-            </p>
+        <div class="art2_sch">
+          <div class="day-buttons">
+            <button id="day1Btn" class="active" onclick="showDay('day1')">Day 1</button>
+            <button id="day2Btn" onclick="showDay('day2')">Day 2</button>
           </div>
-          <div class="art2_topic_image">
-            <img src="" alt="">
-            <h4>MR. ABC</h4>
-            <p>ABC Company</p>
+
+          <!-- Day 1 Schedule -->
+          <div class="schedule-container active" id="day1">
+            <h2>Day 1: Celebrating Computer Security Day</h2>
+            <div class="event left-anim">
+              <div>
+                <div class="time">10:00 AM - 10:30 AM</div>
+                <div class="event-name">Welcome Reception and Opening Ceremony</div>
+                <div class="speaker">Introduction on Cyber Security Day: Student Representative</div>
+                <div class="speaker"><strong>Inaugural Speech:</strong> Sudhanshu Mittal</div>
+                <div class="topic"><strong>Role:</strong> Head and Director, NASCOM</div>
+              </div>
+              <img src="Assets/Images/sudhanshu_mittal.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">10:30 AM - 11:15 AM</div>
+                <div class="event-name">Academia’s Role in Shaping Cybersecurity</div>
+                <div class="speaker"><strong>Speaker:</strong> Sandip Sengupta</div>
+                <div class="topic"><strong>Topic:</strong> Recent Cyber Crime Issues and Mitigation</div>
+              </div>
+              <img src="Assets/Images/sandeep_sengupta.webp" alt="">
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">11:15 AM - 11:45 AM</div>
+                <div class="event-name">Cutting-edge Technologies</div>
+                <div class="speaker"><strong>Speaker:</strong> Suman Dawn</div>
+                <div class="topic"><strong>Role:</strong> Solution Architect @ IBM - Cloud</div>
+              </div>
+              <img src="Assets/Images/suman_dawn.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">11:45 AM - 12:30 PM</div>
+                <div class="event-name">Securing the Core of the Internet</div>
+                <div class="speaker"><strong>Speaker:</strong> Kanchan Mallick</div>
+                <div class="topic"><strong>Role:</strong> Regional Director, TrendMicro India</div>
+              </div>
+              <img src="Assets/Images/kanchan_mallick.webp" alt="">
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">12:30 PM - 1:30 PM</div>
+                <div class="event-name">Advanced Technology Applications</div>
+                <div class="speaker"><strong>Speaker:</strong> Kausik Pal</div>
+                <div class="topic"><strong>Role:</strong> Territory Sales Manager, East India & SAARC</div>
+              </div>
+              <img src="Assets/Images/kausik_pal.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">1:30 PM - 2:30 PM</div>
+                <div class="event-name">Lunch Break</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">2:30 PM - 3:30 PM</div>
+                <div class="event-name">Cybersecurity Laws in Practice</div>
+                <div class="speaker"><strong>Speaker:</strong> Pankaj Chowdhury</div>
+                <div class="topic"><strong>Role:</strong> Advocate (Cyber Lawyer), High Court, Calcutta</div>
+              </div>
+              <img src="Assets/Images/pankaj_chowdhury.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">3:30 PM - 4:15 PM</div>
+                <div class="event-name">Entrepreneurial Approaches</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">4:15 PM - 4:45 PM</div>
+                <div class="event-name">Drama on Cyber Awareness</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">4:45 PM - 5:30 PM</div>
+                <div class="event-name">Quiz Competitions</div>
+              </div>
+              <div></div>
+            </div>
           </div>
-        </div>
-        <div class="art2_topic">
-          <div class="art2_topic_image">
-            <img src="" alt="">
-            <h4>MR. DEF</h4>
-            <p>DEF Cyber Solutions</p>
+
+          <!-- Day 2 Schedule -->
+          <div class="schedule-container" id="day2">
+            <h2>Day 2: Advanced Cybersecurity Topics</h2>
+            <div class="event left-anim">
+              <div>
+                <div class="time">10:00 AM - 10:30 AM</div>
+                <div class="event-name">Opening Keynotes on Day 2</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">10:30 AM - 11:30 AM</div>
+                <div class="event-name">Cybersecurity</div>
+                <div class="speaker">
+                  <strong>Speakers:</strong>
+                  <ul>
+                    <li>Raja Saha - Cyber Police Station, Kolkata Police</li>
+                    <li>Amit saha - Cyber Police Station, Kolkata Police</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="Assets/Images/raja_saha.webp" alt="">
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">11:30 AM - 12:30 PM</div>
+                <div class="event-name">Cutting-edge Technology Using OpenShift and DevOps</div>
+                <div class="speaker"><strong>Speaker:</strong> Tuhin Sinha</div>
+                <div class="topic"><strong>Role:</strong> Red Hat Certified Instructor</div>
+              </div>
+              <img src="Assets/Images/tuhin_sinha.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">12:30 PM - 1:30 PM</div>
+                <div class="event-name">Key Challenges and Innovations in Cloud Security and Generative
+                  AI</div>
+                <div class="speaker">
+                  <strong>Speakers:</strong>
+                  <ul>
+                    <li>Atish Maitra – Head of Sales & Operation, Mekhline Infotech Pvt Ltd</li>
+                    <li>Goutam Dey – CTO, Mekhline Infotech Pvt Ltd</li>
+                    <li>Ritwik Ray – Partner Success Manager (India East, South GF ENT & SAARC), AWS</li>
+                    <li>Bubai Bal – Principal Solution Architect, AWS</li>
+                  </ul>
+                </div>
+                <div class="topic"><strong>Organizer:</strong> Mekhline Infotech Pvt Ltd (M.I.P.L.)</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">1:30 PM - 2:30 PM</div>
+                <div class="event-name">Lunch Break</div>
+              </div>
+              <div></div>
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">2:30 AM - 3:30 PM</div>
+                <div class="event-name">Digital Forensic</div>
+                <div class="speaker"><strong>Speaker:</strong> Sourav Mitra</div>
+                <div class="topic"><strong>Role:</strong>Joint Director (Scientist E), CDAC, Gov. Of India</div>
+              </div>
+              <img src="Assets/Images/sourav.webp" alt="">
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">3:30 AM - 4:00 PM</div>
+                <div class="event-name">Entrepreneurship - Startups</div>
+                <div class="speaker"><strong>Speaker:</strong> Vineet Patawari</div>
+                <div class="topic"><strong>Role:</strong> Co. Founder & CEO of StockEdge</div>
+              </div>
+              <img src="Assets/Images/vineet_pat.webp" alt="">
+            </div>
+            <div class="event right-anim">
+              <div>
+                <div class="time">4:00 PM - 4:30 PM</div>
+                <div class="event-name">Network Security at NOC</div>
+                <div class="speaker"><strong>Speaker:</strong> Abhishek Pal</div>
+                <div class="topic"><strong>Role:</strong> Chief Technical Officer, Wish Net Pvt. Ltd.</div>
+              </div>
+              <img src="Assets/Images/abhishek_pal.webp" alt="">
+            </div>
+            <div class="event left-anim">
+              <div>
+                <div class="time">4:30 PM</div>
+                <div class="event-name">MOU Signing and Prize Distribution</div>
+              </div>
+              <div></div>
+            </div>
           </div>
-          <div class="art2_topic_text">
-            <h3>Ransomware Evolution: Current Trends and Mitigation Strategies</h3>
-            <p>
-              Ransomware has quickly become one of the most pressing issues in cybersecurity, with attacks now affecting
-              everything from small businesses to global corporations. Professor [Name] will walk attendees through the
-              evolution of ransomware—how it has become more targeted, sophisticated, and destructive. This session will
-              also focus on emerging trends, including double-extortion tactics, and provide actionable strategies for
-              mitigating ransomware risks. Learn how to proactively defend against ransomware attacks and what steps
-              organizations can take to respond effectively if they fall victim to one.
-            </p>
-          </div>
-        </div>
-        <div class="art2_topic art2_topic_rev">
-          <div class="art2_topic_text">
-            <h3>Cybersecurity in the Cloud: Navigating Risks and Ensuring Compliance</h3>
-            <p>
-              As organizations increasingly rely on cloud infrastructure, cybersecurity in the cloud is becoming a top
-              priority. Professor [Name] will explore the unique risks associated with cloud computing, including data
-              privacy concerns, misconfigurations, and shared responsibility challenges. This session will also cover
-              how organizations can navigate compliance requirements and implement strong security measures to protect
-              data stored in the cloud. Attendees will gain insights into best practices for securing cloud environments
-              and ensuring compliance with regulations like GDPR and HIPAA.
-            </p>
-          </div>
-          <div class="art2_topic_image">
-            <img src="" alt="">
-            <h4>MR. GHI</h4>
-            <p>Cloud Security Inc.</p>
-          </div>
-        </div>
-        <div class="art2_topic">
-          <div class="art2_topic_image">
-            <img src="" alt="">
-            <h4>MR. DEF</h4>
-            <p>DEF Cyber Solutions</p>
-          </div>
-          <div class="art2_topic_text">
-            <h3>Cybersecurity for Critical Infrastructure: Protecting Essential Services</h3>
-            <p>
-              Critical infrastructure—like power grids, water supply systems, and transportation networks—forms the
-              backbone of any nation, making them high-value targets for cybercriminals. In this session, Professor
-              [Name] will discuss the importance of cybersecurity in protecting these essential services from cyber
-              attacks. With real-world examples, attendees will learn about the unique vulnerabilities of critical
-              infrastructure, as well as strategies for safeguarding these systems against potential disruptions and
-              attacks. This talk will provide insights into national and international efforts to secure critical
-              infrastructure and maintain public trust.
-            </p>
-          </div>
-        </div>
-        <div class="art2_topic art2_topic_rev">
-          <div class="art2_topic_text">
-            <h3>The Role of Cyber Threat Intelligence in Proactive Defense</h3>
-            <p>
-              Staying a step ahead of cybercriminals requires more than just reactive security; it demands proactive
-              defense. Professor [Name] will discuss the role of Cyber Threat Intelligence (CTI) in identifying,
-              analyzing, and mitigating potential threats before they can cause harm. This session will cover how CTI
-              gathers information about emerging threats, provides context on attacker tactics, techniques, and
-              procedures, and enables organizations to prepare and respond effectively. Attendees will learn about the
-              various types of threat intelligence and how to integrate CTI into their organization’s overall
-              cybersecurity strategy.
-            </p>
-          </div>
-          <div class="art2_topic_image">
-            <img src="" alt="">
-            <h4>MR. MNO</h4>
-            <p>Intelligence Hub Corp.</p>
-          </div>
-        </div>
-        <div class="art2_topic_text art2_topic_outcome">
-          <h3>Sessions Outcomes:</h3>
-          <p>
-            A renowned cybersecurity experts/academicians deliver thought-provoking
-            presentations on the latest cyber threats and trends, providing a strategic roadmap for building robust
-            defences. The outcomes of these sessions are as follows:
-          <ul>
-            <li>A comprehensive understanding of Zero Trust Principle and how they differ from traditional security
-              models.</li>
-            <li>Insights into tools and technologies that support Zero Trust.</li>
-            <li>Case Studies highlighting successful Zero Trust deployments.</li>
-            <li>An overview of the latest ransomware trends and attack vectors.</li>
-            <li>Effective methods for detecting and responding to ransomware attacks.</li>
-            <li>Best Practices for ransomware prevention, including awareness.</li>
-            <li>Strategies for data backup and recovery to minimize impact.</li>
-            <li>Insights into the legal and ethical considerations of dealing with ransomware demands.</li>
-            <li>Understanding the unique security challenges posed by cloud environments.</li>
-            <li>Techniques for ensuring compliance with relevant regulations and standards.</li>
-          </ul>
-          </p>
         </div>
       </article>
     </section>
@@ -331,7 +406,7 @@
           </div>
           <div>
             <img src="Assets/SM-Icons/mail-b.png" alt="" />
-            <a href="mailto:info@brainwareuniversity.ac.in">info@brainwareuniversity.ac.in</a>
+            <a href="mailto:seccomnexus@gmail.com">seccomnexus@gmail.com</a>
           </div>
           <div>
             <img src="Assets/SM-Icons/loc-b.png" alt="" />
@@ -360,7 +435,7 @@
     </article>
     <article class="foot2">
       <h3>Query Form</h3>
-      <form id="query-form" action="#" method="POST">
+      <form id="query-form" action="thank-you.html" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required />
 
@@ -377,7 +452,7 @@
 
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Submit</button>
+        <button id="submitBtn" type="submit">Submit</button>
       </form>
     </article>
   </footer>

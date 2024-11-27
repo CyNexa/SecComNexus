@@ -45,65 +45,78 @@ p {
 }
 
 /* Arts */
-.art2_topic {
+.art2_sch {
+    margin-top: 30px;
+}
+.day-buttons {
+    display: flex;
+    z-index: 1;
+}
+.day-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+.day-buttons button.active {
+    background-color: #007bff;
+}
+.day-buttons button:hover {
+    background-color: #004080;
+}
+.schedule-container {
+    border: 2px solid #007bff;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+.schedule-container.active {
+    display: block; /* Show only active schedule */
+}
+.event {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 15px;
+    margin: 15px 0;
+    padding: 15px;
+    text-align: left;
 }
-.art2_topic {
-    animation: fadeInFromLeft 1s ease-out forwards;
-}
-.art2_topic_rev {
-    animation: fadeInFromRight 1s ease-out forwards;
-}
-.art2_topic_text {
-    width: 65vw;
-}
-.art2_topic_text h3 {
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding-bottom: 10px;
-    color: var(--second-color);
-}
-.art2_topic_text p {
-    font-weight: 200;
-    color: var(--first-color);
-}
-.art2_topic_image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20vw;
-}
-.art2_topic_image img {
-    width: 150px;
+.event img {
+    object-fit: cover;
     height: 150px;
-    background-color: gray;
+    width: 150px;
     border-radius: 50%;
+    border: 2px solid #fff;
 }
-.art2_topic_image h4 {
-    font-weight: 300;
-    font-size: 0.9rem;
-    color: var(--second-color);
+.time, .speaker, .topic, .event-name {
+    margin: 5px 0;
 }
-.art2_topic_image p {
-    font-weight: 200;
-    font-size: 0.7rem;
-    color: var(--third-color);
-}
-.art2_topic_outcome ul {
-    margin: 10px 20px;
-    font-weight: 200;
-}
-.art2_topic_outcome li {
-    padding: 5px 0px;
-    color: #d4d4d4;
+.time {
     font-size: 1rem;
+    color: #007bff;
 }
-.art2_topic_outcome li::marker {
+.event-name {
+    font-size: 1.6rem;
+    font-weight: 400;
     color: var(--second-color);
 }
+.speaker {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+.topic {
+    color: rgba(255, 255, 255, 0.6);
+}
+.speaker ul {
+    margin-left: 20px;
+}
+
+
 
 /* Article 3 */
 .art3, .art4, .art5, .art7 {
@@ -188,6 +201,12 @@ p {
     margin-top: 10px;
     margin-left: 10px;
 }
+.left-anim {
+    animation: fadeInFromLeft 1s ease-out forwards;
+}
+.right-anim {
+    animation: fadeInFromRight 1s ease-out forwards;
+}
 
 @media (max-width: 800px) {
     .sec1, .sec2{
@@ -261,6 +280,31 @@ p {
     }
     .art8 p {
         font-size: 0.8rem;
+    }
+
+    .event {
+        align-items: baseline;
+        flex-direction: column-reverse;
+        padding: 15px 0px;
+        margin: 20px 0px}
+    .event img {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .time {
+        font-size: 0.6rem;
+    }
+    .event-name {
+        font-size: 1rem;
+    }
+    .speaker {
+        font-size: 0.8rem;
+    }
+    .topic {
+        font-size: 0.7rem;
+    }
+    .speaker ul {
+        margin-left: 20px;
     }
 
 }

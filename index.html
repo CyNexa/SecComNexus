@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Setcom" />
-  <title>SecComNexus</title>
+  <title>SecCom 2024</title>
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/home.css" />
 </head>
@@ -32,7 +32,9 @@
 
   <main>
     <section class="sec1">
-      <canvas id="dotsCanvas"></canvas>
+      <video autoplay muted loop id="myVideo">
+        <source src="Assets/bg.webm" type="video/mp4">
+      </video>
       <article class="art1">
         <p>GLOBAL CYBERSECURITY SUMMIT</p>
         <div>
@@ -102,7 +104,7 @@
       <article class="art3">
         <div>
           <p>ABOUT</p>
-          <h2>SecComNexus</h2>
+          <h2>SecCom 2024</h2>
         </div>
         <p>
           This program, hosted by the Department of Cyber Science & Technology with the Brainware Cyber Club and
@@ -134,7 +136,7 @@
           <h2>Our Speakers</h2>
           <hr class="glob_hr" />
         </div>
-        
+
         <div class="art4_ppls">
           <div>
             <p class="chief">Chief Guest</p>
@@ -254,6 +256,14 @@
             <div>
               <h4>Vineet Patawari</h4>
               <p>CEO & Co-Founder StockEdge</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="Assets/Images/sourav.webp" alt="" />
+            <div>
+              <h4>Sourav Mitra</h4>
+              <p>Joint Director (Scientist E), CDAC</p>
             </div>
           </div>
         </div>
@@ -396,7 +406,7 @@
           </div>
           <div>
             <img src="Assets/SM-Icons/mail-b.png" alt="" />
-            <a href="mailto:info@brainwareuniversity.ac.in">info@brainwareuniversity.ac.in</a>
+            <a href="mailto:seccomnexus@gmail.com">seccomnexus@gmail.com</a>
           </div>
           <div>
             <img src="Assets/SM-Icons/loc-b.png" alt="" />
@@ -425,7 +435,7 @@
     </article>
     <article class="foot2">
       <h3>Query Form</h3>
-      <form id="query-form" action="#" method="POST">
+      <form id="query-form" action="thank-you.html" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required />
 
@@ -442,7 +452,7 @@
 
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Submit</button>
+        <button id="submitBtn" type="submit">Submit</button>
       </form>
     </article>
   </footer>
